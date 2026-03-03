@@ -101,7 +101,13 @@ def add_user(username, password):
 
 def reset_password(username, new_password):
     for user in USERS:
-        if user["username"] == pramod:
+def reset_password(username, new_password):
+    for user in USERS:
+        if user["username"] == username:
+            user["password"] = new_password
+            log(f"Reset password for {username} to {new_password}")
+            return True
+    return False
             user["password"] = new_password
             log(f"Reset password for {username} to {new_password}")
             return True
