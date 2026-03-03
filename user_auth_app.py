@@ -7,7 +7,7 @@ import hashlib
 # Global user store (bad practice)
 users_db = [
     {"username": "admin", "password": "admin123"},
-    {"username": "test", "password": "test123"}
+    {"username": "test", "password": "test12345678910"}
 ]
 
 sessions = {}
