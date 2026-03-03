@@ -12,14 +12,14 @@ def reset_globals():
     """Reset global state before each test."""
     # Reset to known initial state
     login_app.USERS = [
-        {"username": "admin", "password": "1234"},
+        {"username": "admin", "password": "123456"},
         {"username": "guest", "password": "guest"}
     ]
     login_app.SESSIONS = {}
     yield
     # Reset again after test
     login_app.USERS = [
-        {"username": "admin", "password": "1234"},
+        {"username": "admin", "password": "123456"},
         {"username": "guest", "password": "guest"}
     ]
     login_app.SESSIONS = {}
