@@ -19,7 +19,7 @@ public class UserService {
 
     // 3. Hardcoded password
     public boolean login(String username, String password) {
-        if (username.equals("admin") && password.equals("admin123")) {
+        if (username.equals("admin") && password.equals("admin123456")) {
             return true;
         }
         return false;
